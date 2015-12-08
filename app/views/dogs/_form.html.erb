@@ -11,17 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :owner_id %><br>
-    <%= f.text_field :owner_id %>
+  <div class="form-group">
+    <%= f.collection_select :owner_id, Owner.all, :id, :last_first, {prompt: "Select an Owner"} %>
   </div>
   <div class="field">
-    <%= f.label :breed_id %><br>
-    <%= f.text_field :breed_id %>
+    <%= f.collection_select :breed_id, Breed.all, :id, :breed, {prompt: "Select a Breed"} %>
   </div>
   <div class="field">
     <%= f.label :dob %><br>
