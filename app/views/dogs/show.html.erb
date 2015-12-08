@@ -31,6 +31,12 @@
 </p>
 
 <p>
+  <strong>Picture:</strong><br>
+  <%= image_tag @dog.picture.url(:medium) %>
+</p>
+
+
+<p>
   <strong>In daycare:</strong>
   <%= @dog.in_daycare %>
 </p>
