@@ -6,6 +6,8 @@ gem 'starter_generators'
 gem 'awesome_print'
 gem 'annotate'
 gem 'stamp'
+gem "paperclip", "~> 4.3"
+gem "font-awesome-rails"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
